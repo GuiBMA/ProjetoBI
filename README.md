@@ -112,4 +112,4 @@ Armazena os endereços dos entrevistados.
 
 ## Considerações Finais
 
-Este projeto está em desenvolvimento com o objetivo de fornecer uma analize para a Ilha Primeira com o fácil crescimento e manutenção de novas pesquisas e entrevistados ao longo do tempo. O banco de dados está preparado para armazenar grandes volumes de dados de forma organizada, garantindo a integridade e segurança das informações.
+Este projeto está em desenvolvimento com o objetivo de fornecer uma análise para a Ilha Primeira com o fácil crescimento e manutenção de novas pesquisas e entrevistados ao longo do tempo. O banco de dados está preparado para armazenar grandes volumes de dados de forma organizada, garantindo a integridade e segurança das informações.
