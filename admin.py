@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 class AdminInterface:
-    def __init__(self, root, db):
+    def __init__(self, root, db, serializer=None):
         self.db = db
         self.root = root
         self.root.title("Administração de Pesquisas")
