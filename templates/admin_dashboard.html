@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Painel do Administrador</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Painel do Administrador</h1>
+        <div class="options">
+            <button onclick="location.href='/gerenciar_pesquisa'">Gerenciar Pesquisas</button>
+            <button onclick="location.href='/gerenciar_entrevistado'">Gerenciar Entrevistados</button>
+        </div>
+    </div>
+</body>
+</html>
