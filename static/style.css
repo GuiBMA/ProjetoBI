@@ -19,7 +19,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
 }
 
 /* Estilo para títulos */
@@ -41,8 +41,49 @@ button {
     margin: 10px;
 }
 
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button-group button {
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 button:hover {
     background-color: #2ecc71;
+}
+
+.add-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+button.editar {
+    background-color: #27ae60;
+    color: white;
+}
+
+button.remover {
+    background-color: #e74c3c;
+}
+
+button.remover:hover {
+    background-color: #c0392b;
 }
 
 .options {
@@ -97,6 +138,19 @@ ul li {
     margin-left: 10px;
     padding: 5px 10px;
     font-size: 14px;
+}
+
+.survey-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.survey-list li {
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre o texto e os botões */
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
 }
 
 /* Responsividade */

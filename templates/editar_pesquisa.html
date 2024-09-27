@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Editar Pesquisa</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Editar Pesquisa</h1>
+        <form method="POST">
+            <label for="nome">Nome da Pesquisa:</label>
+            <input type="text" name="nome" value="{{ pesquisa['nome'] }}" required><br>
+            <label for="data_inicio">Data de Início:</label>
+            <input type="date" name="data_inicio" value="{{ pesquisa['data_inicio'] }}" required><br>
+            <label for="data_fim">Data de Fim:</label>
+            <input type="date" name="data_fim" value="{{ pesquisa['data_fim'] }}" required><br>
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+</body>
+</html>

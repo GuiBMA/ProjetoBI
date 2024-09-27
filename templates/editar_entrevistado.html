@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Editar Entrevistado</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Editar Entrevistado</h1>
+        <form method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" value="{{ entrevistado['nome'] }}" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" value="{{ entrevistado['email'] }}" required>
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" name="data_nascimento" value="{{ entrevistado['data_nascimento'] }}" required>
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+</body>
+</html>

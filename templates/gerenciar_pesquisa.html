@@ -12,15 +12,17 @@
         <ul class="survey-list">
             {% for pesquisa in pesquisas %}
             <li>
-                {{ pesquisa[1] }}
-                <div>
-                    <button>Editar</button>
-                    <button>Excluir</button>
+                {{ pesquisa['nome'] }}
+                <div class="button-group">
+                    <form action="{{ url_for('remover_pesquisa', id=pesquisa['id']) }}" method="POST">
+                        <button class="editar" formaction="{{ url_for('editar_pesquisa', id=pesquisa['id']) }}">Editar</button>
+                        <button type="submit" class="remover">Excluir</button>
+                    </form>
                 </div>
             </li>
             {% endfor %}
         </ul>
-        <button onclick="location.href='/adicionar_pesquisa'">Adicionar Pesquisa</button>
+        <button class="add-btn" onclick="location.href='/adicionar_pesquisa'">Adicionar Pesquisa</button>
     </div>
 </body>
 </html>
